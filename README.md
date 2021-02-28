@@ -1,7 +1,7 @@
 # Messenger
 
 ## TODO
--[ ] Install Tailwind  
+-[x] Install Tailwind  
 -[ ] Create Messenger Component  
 -[ ] Create MessengerInput Component  
 -[ ] Create Message Component  

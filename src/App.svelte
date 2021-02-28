@@ -3,6 +3,12 @@
 </script>
 
 <main>
-	<h1 class="bg-red-700">Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
+
+	<div class="min-w-max h-screen flex flex-col p-4 rounded-lg bg-gradient-to-br from-blue-300 to-purple-300">
+		<span>message</span>
+		<span>message</span>
+	</div>
+
+
 </main>

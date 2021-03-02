@@ -4,6 +4,7 @@
 -[x] Install Tailwind  
 -[x] Create Messenger Component  
 -[x] Create MessengerInput Component  
--[ ] Create Message Component  
--[ ] Implement Message Variable Connection
+-[x] Create Message Component  
+-[x] Implement Message Variable Connection  
+-[ ] Refactor DateTime
 -[ ] Connect Websocket  

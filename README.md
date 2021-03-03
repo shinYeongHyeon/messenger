@@ -6,5 +6,6 @@
 -[x] Create MessengerInput Component  
 -[x] Create Message Component  
 -[x] Implement Message Variable Connection  
--[ ] Refactor DateTime
+-[ ] Refactor DateTime  
+-[ ] Enter Action  
 -[ ] Connect Websocket  

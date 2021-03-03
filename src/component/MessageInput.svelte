@@ -1,12 +1,13 @@
 <script>
   import { messages } from '../stores/stores';
+  import { dayJs } from '../stores/dayjs';
 
   let messageValue = '';
 
   function sendMessage() {
     $messages = [...$messages, {
       messageValue,
-      datetime: new Date(),
+      datetime: dayJs(),
     }]
 
     messageValue = '';

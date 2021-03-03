@@ -36,6 +36,7 @@
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
     "@types/lodash": "^4.14.168",
+    "dayjs": "^1.10.4",
     "lodash": "^4.17.21",
     "postcss-cli": "^8.3.1",
     "sirv-cli": "^1.0.0"

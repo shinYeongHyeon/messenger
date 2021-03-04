@@ -1,10 +1,11 @@
 <script>
-  import { messages } from '../stores/stores';
+  import { messages, socket } from '../stores/stores';
   import { dayJs } from '../stores/dayjs';
 
   let messageValue = '';
 
   function sendMessage() {
+    socket.send(messageValue);
     $messages = [...$messages, {
       messageValue,
       datetime: dayJs(),

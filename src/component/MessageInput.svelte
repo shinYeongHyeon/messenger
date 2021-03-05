@@ -6,12 +6,22 @@
 
   function sendMessage() {
     socket.send(messageValue);
+
     $messages = [...$messages, {
       messageValue,
       datetime: dayJs(),
     }]
 
     messageValue = '';
+  }
+
+  function onKeyDown(e) {
+    if (e.keyCode === 13) {
+      if (!e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    }
   }
 </script>
 
@@ -20,6 +30,7 @@
         <textarea
                 class="w-full h-full resize-none focus:outline-none"
                 bind:value={ messageValue }
+                on:keydown={ onKeyDown }
         ></textarea>
     </label>
     <button

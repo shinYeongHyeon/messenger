@@ -5,14 +5,22 @@
   let messageValue = '';
 
   function sendMessage() {
-    socket.send(messageValue);
+    socket.send(JSON.stringify({
+      text: messageValue,
+    }));
 
-    $messages = [...$messages, {
-      messageValue,
-      datetime: dayJs(),
-    }]
+
 
     messageValue = '';
+  }
+
+  socket.onmessage = function (e) {
+    const receivedData = JSON.parse(e.data);
+
+    $messages = [...$messages, {
+      messageValue: receivedData.text,
+      datetime: dayJs(),
+    }];
   }
 
   function onKeyDown(e) {

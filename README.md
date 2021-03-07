@@ -9,4 +9,7 @@
 -[x] Refactor DateTime  
 -[x] Enter Action  
 -[x] Connect Websocket  
--[ ] Fix Message Enter Shape
+-[ ] Fix Message Enter Shape  
+-[ ] Login  
+-[ ] Room Lists
+-[ ] Room

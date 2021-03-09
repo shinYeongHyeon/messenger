@@ -1,4 +1,5 @@
 # Messenger
+![MAIN](./src/assets/main.png)
 
 ## TODO
 -[x] Install Tailwind  

@@ -17,6 +17,7 @@
                     placeholder="Enter you Password."
             />
         </label>
-        <button type="submit" class="mt-4 mb-10 bg-gray-700 rounded-2xl text-white text-lg p-2">LogOn</button>
+        <button type="submit" class="mt-4 bg-gray-700 rounded-2xl text-white text-lg p-2">LogOn</button>
+        <button type="submit" class="mt-2 mb-10 bg-green-700 rounded-2xl text-white text-lg p-2">Sign Up</button>
     </div>
 </div>

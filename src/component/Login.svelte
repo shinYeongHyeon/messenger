@@ -22,6 +22,24 @@
       $logon.token = data.token;
     })
   }
+
+  async function loginIn() {
+    await fetch(`${API_URL}/signin`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        Username: id,
+        Password: pwd,
+      }),
+    })
+      .then(r => r.json())
+      .then(function (data) {
+        $logon.isLogon = true;
+        $logon.token = data.token;
+      })
+  }
 </script>
 
 <div class="flex flex-col min-w-full min-h-screen bg-gray-100 flex items-center justify-center">
@@ -45,7 +63,11 @@
                     bind:value={pwd}
             />
         </label>
-        <button type="submit" class="mt-4 bg-gray-700 rounded-2xl text-white text-lg p-2">LogOn</button>
+        <button
+                type="submit"
+                class="mt-4 bg-gray-700 rounded-2xl text-white text-lg p-2"
+                on:click={loginIn}
+        >LogOn</button>
         <button
                 type="submit"
                 class="mt-2 mb-10 bg-green-700 rounded-2xl text-white text-lg p-2"

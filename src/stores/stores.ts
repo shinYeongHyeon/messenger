@@ -2,6 +2,7 @@ import { writable } from 'svelte/store';
 
 export const logon = writable({
     isLogon: false,
+    token: '',
 });
 export const messages = writable([]);
 
